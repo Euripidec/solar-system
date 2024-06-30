@@ -1,5 +1,5 @@
 [build]
-  base = "solar-system"
+  base = ""
   command = "npm run build:prod"
   publish = "dist/browser"
 
