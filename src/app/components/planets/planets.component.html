@@ -1,0 +1,14 @@
+<div class="wrap">
+    <div *ngFor="let planet of planets" [ngClass]="planet.name.toLowerCase()">
+        <div [ngClass]="planet.name.toLowerCase() + '-shadow overflow-wrapper'">
+          <div [ngClass]="planet.name.toLowerCase() + '-img overlay zoom'"></div>
+        </div>
+        <div [ngClass]="'explore-' + planet.name.toLowerCase()">
+          <h3 class="page-anchor">
+            <a [href]="'/' + planet.name.toLowerCase()">
+              Explore {{ planet.name }} &#8594;
+            </a>
+          </h3>
+        </div>
+      </div>
+</div>

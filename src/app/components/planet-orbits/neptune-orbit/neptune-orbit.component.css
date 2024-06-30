@@ -1,0 +1,48 @@
+:host {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    width: 100%;
+  }
+  
+  .solar-system {
+    position: relative;
+    width: 450px; /* Adjusted size for Neptune's orbit */
+    height: 450px; /* Adjusted size for Neptune's orbit */
+  }
+  
+  .sun {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .neptune-orbit {
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    border: 1px dashed rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .neptune {
+    position: absolute;
+    width: 15px; /* Adjust size of Neptune */
+    height: 15px; /* Adjust size of Neptune */
+    background-color: #4169e1; /* Color similar to Neptune */
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  

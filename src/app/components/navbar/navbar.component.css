@@ -1,0 +1,59 @@
+
+#navbar {
+  background: #000000;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  box-shadow: 0px 4px 2rem rgb(0 0 0 / 0.5);
+}
+
+#navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  margin: auto;
+}
+
+#navbar ul li {
+  list-style: none;
+  color: white;
+  padding: 0rem 1.5rem;
+  font-size: 1.25rem;
+  font-family: "Manrope", sans-serif;
+  text-align: center;
+}
+
+#navbar ul li a {
+  position: relative;
+  display: inline-block;
+  padding: 1rem;
+  text-decoration: none;
+  color: white;
+}
+
+#navbar ul li a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 1.5px;
+  width: 100%;
+  transform: scaleX(0);
+  background-color: white;
+  left: 0;
+  bottom: 8px;
+  transform-origin: center;
+  transition: 0.4s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  z-index: -1;
+}
+
+#navbar ul li a:hover::after,
+#navbar ul li a:hover::before {
+  transform: scaleX(1);
+  z-index: -1;
+}
+
+.logo {
+  display: none;
+}
