@@ -1014,6 +1014,25 @@
     transform: rotate(45deg) translate(-6px, -0.25px);
   }
 
+  #navbar .navbar-links ul {
+    display: flex;
+    flex-direction: column; /* Change to vertical layout */
+    align-items: flex-start; /* Align items to the start */
+    padding: 0; /* Remove any default padding */
+    margin: 0; /* Remove any default margin */
+  }
+  
+  #navbar .navbar-links ul li {
+    list-style: none; /* Remove bullet points */
+    width: 100%; /* Ensure full width for each item */
+  }
+  
+  #navbar .navbar-links ul li a {
+    display: block;
+    padding: 1rem; /* Add padding for clickable area */
+  }
+  
+
   .orbits2 {
     width: 100%;
     height: 60vw;
